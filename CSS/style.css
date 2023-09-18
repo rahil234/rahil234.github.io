@@ -24,3 +24,7 @@ html {
     overflow-x: hidden;
     
 }
+
+body {
+    bgcolor:var(--bg-color)
+}
