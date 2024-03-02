@@ -1,0 +1,10 @@
+*{
+    background: #ebeffb;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+li{
+    color: #babdcc;
+    font-size: small;
+    padding: 5px;
+    display: inline;
+}
