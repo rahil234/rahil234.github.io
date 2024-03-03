@@ -1,11 +1,9 @@
-import React from 'react'
-
+import React from "react";
+import "./HomePage.css";
 function HomePage() {
-  return (
-    <div>
-      
-    </div>
-  )
+  return <div>
+    <h1>RAHIL SARDAR</h1>
+  </div>;
 }
 
-export default HomePage
+export default HomePage;
