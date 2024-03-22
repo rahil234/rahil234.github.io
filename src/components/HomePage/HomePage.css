@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "Quebec Serial";
+  src: url("../../assets/fonts/Quebec-Serial.ttf") format("truetype");
+  font-weight: bold;
+}
+* {
+  background: #ebeffb;
+}
+
+#text_container {
+  /* background-color: rgb(88, 87, 87); */
+  max-width: 70dvw;
+  height: 30vh;
+  top: 40svh;
+  left: 10vw;
+  position: relative;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* Adjust the gap value as needed */
+}
+
+#hellotext {
+  font-size: medium;
+  font-weight: 600;
+  font-family: 'Helvetica', serif;
+}
+
+#nametext {
+  font-size: 7vh;
+  font-family: 'Helvetica', serif;
+}
+
+#abouttext {
+  font-size: small;
+  font-family: 'Helvetica', serif;
+}
+
+#download_btn {
+  max-width: 20dvh;
+  color: #ebeffb;
+  background-color: #ff023e;
+  padding: 1vh 1.5vw;
+  font-family: 'Times New Roman', serif;
+}
