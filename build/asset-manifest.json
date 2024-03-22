@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6bb98e05.css",
+    "main.js": "/static/js/main.08968f56.js",
+    "static/js/453.fe521f53.chunk.js": "/static/js/453.fe521f53.chunk.js",
+    "static/media/RahilSardar_RESUME.pdf": "/static/media/RahilSardar_RESUME.d5620e59bfd3a6b379d6.pdf",
+    "static/media/Quebec-Serial.ttf": "/static/media/Quebec-Serial.e995f6900b84e7ee7cf3.ttf",
+    "index.html": "/index.html",
+    "main.6bb98e05.css.map": "/static/css/main.6bb98e05.css.map",
+    "main.08968f56.js.map": "/static/js/main.08968f56.js.map",
+    "453.fe521f53.chunk.js.map": "/static/js/453.fe521f53.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6bb98e05.css",
+    "static/js/main.08968f56.js"
+  ]
+}
