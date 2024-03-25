@@ -7,6 +7,27 @@
   background: #ebeffb;
 }
 
+.main_conainer{
+
+}
+
+.main_container {
+  display: flex;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+}
+
+.ph_container {
+  width: 30%;
+  /* Adjust other styles as needed */
+}
+
+.ph_container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 #text_container {
   /* background-color: rgb(88, 87, 87); */
   max-width: 70dvw;
