@@ -1,9 +1,12 @@
-/* For Webkit browsers like Chrome and Safari */
+/*  For Webkit browsers like Chrome and Safari */
 ::-webkit-scrollbar {
-  width: 0px;
+  /* width: 0px; */
   /* width of the entire scrollbar */
 }
-
+::-webkit-scrollbar-button {
+  width: px;
+  /* width of the scrollbar up and down buttons */
+}
 ::-webkit-scrollbar-thumb {
   background: #bbb6b6;
   /* color of the scroll thumb */
@@ -11,15 +14,10 @@
   /* roundness of the scroll thumb */
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-  /* color of the scroll thumb on hover */
-}
-
 @media (max-width: 600px) {
-  /* Adjust breakpoint as needed */
+  /* Adjust breakpoint as needed  */
   .navclass ul {
-    padding: 0 20px; /* Adjust as needed */
+    padding: 0 20px; /*Adjust as needed */
   }
 }
 
@@ -31,9 +29,8 @@ body {
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   color: #3e4356;
+  user-select: none;
 }
-
-
 
 .paddclass {
   padding: 6vh 1px 1px 1px;
@@ -48,6 +45,11 @@ body {
   transition: background-color 0.5s ease;
 }
 
+.navclass :before {
+  filter: blur(10px); /* Adjust the blur intensity as needed */
+  opacity: 0.7;
+}
+
 .navclass.scrolled {
   background-color: #ffffff;
 }
@@ -55,7 +57,7 @@ body {
 .navclass ul {
   display: flex;
   padding: 0;
-  justify-content:center;
+  justify-content: center;
   list-style: none;
 }
 
@@ -80,7 +82,6 @@ a:hover {
 
 /* ///////////////PAGES////////////////////  */
 
-
 .home {
   background-color: #ebeffb;
   text-align: center;
@@ -93,7 +94,6 @@ a:hover {
   padding: 10vh 0 10vh 10vw;
   width: 53vw;
   text-align: left;
-
 }
 
 .homeText h3 {
@@ -144,37 +144,28 @@ a:hover {
   height: auto;
 }
 
-.about > div {
-
-}
-
-
 .resume {
   text-align: center;
 }
 
 .contact {
   position: relative;
-  height: 50vh;
   border-top: 2px solid #ebeffb;
-  /* display: flex; */
 }
 
 .contact .text_div {
   margin-left: 20vw;
   width: 30vw;
-  
 }
 
 .contact .address_div {
-  height: 20vh;
+  min-height: 25vh;
   background-color: #ebeffb;
 }
 
-
-.contact .form_div{
+.contact .form_div {
   text-align: center;
-  position : absolute;
+  position: absolute;
   height: 25vh;
   width: 40vw;
   right: 10vw;
@@ -184,13 +175,11 @@ a:hover {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-
-
   padding: 10px;
 }
 
-
-.contact input[type=text], input[type=email]{
+.contact input[type="text"],
+input[type="email"] {
   border: 0;
   border-bottom: 1px solid #818181;
 }
@@ -202,26 +191,36 @@ a:hover {
   resize: none;
 }
 
-.contact button{
+.contact button {
   padding: 7px 20px;
   border: none;
   background-color: rgb(33, 33, 87);
   color: white;
 }
 
+.contact ul {
+  list-style: url("/assets/svg/line.svg");
+}
+
+.contact .contactinfo {
+  padding-left: 5vw;
+  max-width: 40vw;
+}
+
 textarea:focus {
-  /* background-color: #a72727; */
+  background-color: #a72727;
 }
 
 /* //////////////////////Pages END//////////////////////// */
-
 footer {
-  /* position: relative; */
-  /* bottom: 0; */
+  position: relative;
   text-align: center;
-  margin-top: 5 vh;
-  padding-top: 1px;
-  padding-bottom: 1px;
-  width: 100%;
   background-color: #ffffff;
+  margin: 10px 0;
 }
+
+footer p {
+  margin: 0;
+  font-size: 0.8em;
+}
+
