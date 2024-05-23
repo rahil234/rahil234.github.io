@@ -1,17 +1,7 @@
 /*  For Webkit browsers like Chrome and Safari */
 ::-webkit-scrollbar {
-  /* width: 0px; */
   /* width of the entire scrollbar */
-}
-::-webkit-scrollbar-button {
-  width: px;
-  /* width of the scrollbar up and down buttons */
-}
-::-webkit-scrollbar-thumb {
-  background: #bbb6b6;
-  /* color of the scroll thumb */
-  border-radius: 10px;
-  /* roundness of the scroll thumb */
+  width: 0px;
 }
 
 @media (max-width: 600px) {
@@ -28,6 +18,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
+    /* font-family: monospace; */
   color: #3e4356;
   user-select: none;
 }
@@ -148,79 +139,135 @@ a:hover {
   text-align: center;
 }
 
-.contact {
+/* Contact Section Specific Styles */
+.contact-container {
+  margin-top: 300px;
+  /* height: 80vh; */
   position: relative;
-  border-top: 2px solid #ebeffb;
+  /* padding: 50px; */
+  /* background-color: #0e0000; */
+  display: flex;
+  flex-direction: column;
 }
 
-.contact .text_div {
-  margin-left: 20vw;
-  width: 30vw;
+.contact-container .text-div{
+  min-height: 20vh;
 }
 
-.contact .address_div {
-  min-height: 25vh;
+.contact-container .address-div{
+  min-height: 20vh;
   background-color: #ebeffb;
 }
 
-.contact .form_div {
-  text-align: center;
+.contact-container .text-div p {
+  margin: 50px;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #6c757d;
+  max-width: 50vw;
+}
+
+.contact-container .address-div .contactinfo {
+  list-style: inside url('/assets/icons/line.svg');
+  padding: 0;
+  margin: 50px;
+}
+
+.contact-container .address-div .contactinfo li,
+.contact-container .address-div .social-links li {
+  font-size: 1rem;
+  color: #6c757d;
+  margin-bottom: 10px;
+}
+
+.contact-container .social-links {
+  list-style: none;
+  padding: 0;
+  margin: 50px;
+  display: flex;
+  gap: 10px;
+}
+
+.contact-container .social-links li a {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
+
+.contact-container .social-links li a img {
+  width: 20px;
+}
+
+.contact-container .form-div {
+  font-size: small;
   position: absolute;
-  height: 25vh;
-  width: 40vw;
-  right: 10vw;
-  top: 2vh;
+  right: 8vw;
+  max-width: 400px;
   background-color: #f8f9fe;
-  box-shadow: 2px 1px 1px 1px #000000;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-  padding: 10px;
+  padding: 40px 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.contact input[type="text"],
-input[type="email"] {
-  border: 0;
-  border-bottom: 1px solid #818181;
+.contact-container .form-div form {
+  display: flex;
+  /* text-align: right; */
+  /* justify-content: right; */
+  flex-direction: column;
 }
 
-.contact textarea {
-  box-sizing: border-box;
+.contact-container .form-div input,
+.contact-container .form-div textarea,
+.contact-container .form-div button {
+  align-items: right;
+  padding: 20px 20px;
+  width: 30vw;
+  color: #000000;
+  background: #f8f9fe;
+  /* margin-bottom: 10px; */
   border: 0;
-  border-bottom: 1px solid #818181;
+  border-bottom: 1px solid #b5bebe;
   resize: none;
 }
 
-.contact button {
-  padding: 7px 20px;
-  border: none;
-  background-color: rgb(33, 33, 87);
+.contact-container .form-div textarea {
+  height: 50px;
+}
+
+.contact-container .form-div input:focus,
+.contact-container .form-div textarea:focus,
+.contact-container .form-div input:focus::placeholder,
+.contact-container .form-div textarea:focus::placeholder
+{
+  outline: none;
+  color: #000000;
+  border-color: #000000;
+}
+
+.contact-container .form-div button {
+  background-color: #3e4454;
   color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.contact ul {
-  list-style: url("/assets/svg/line.svg");
+.contact-container .form-div button:hover {
+  background-color: #515a70;
 }
 
-.contact .contactinfo {
-  padding-left: 5vw;
-  max-width: 40vw;
-}
 
-textarea:focus {
-  background-color: #a72727;
-}
+
 
 /* //////////////////////Pages END//////////////////////// */
 footer {
   position: relative;
   text-align: center;
   background-color: #ffffff;
-  margin: 10px 0;
+  /* margin: 10px 0; */
 }
 
 footer p {
-  margin: 0;
-  font-size: 0.8em;
+  /* margin: 0; */
+  /* font-size: 0.8em; */
 }
 
