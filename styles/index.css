@@ -12,6 +12,7 @@
 }
 
 body {
+  /* scroll-behavior: smooth; */
   background-color: #ffffff;
   margin: 0;
   padding: 0;
@@ -24,25 +25,22 @@ body {
 }
 
 .paddclass {
-  padding: 6vh 1px 1px 1px;
+  padding: 6vh 0 0 0;
 }
 
 .navclass {
   height: auto;
+  padding-bottom: 1vh;
   position: fixed;
   top: 0;
   width: 100%;
   background-color: #ebeffb;
+  background: linear-gradient(180deg, #ebeffb 55%, #00000000);
   transition: background-color 0.5s ease;
 }
 
-.navclass :before {
-  filter: blur(10px); /* Adjust the blur intensity as needed */
-  opacity: 0.7;
-}
-
 .navclass.scrolled {
-  background-color: #ffffff;
+  /* background: linear-gradient(180deg, #ebeffb 55%, #ebeffb00); */
 }
 
 .navclass ul {
@@ -259,15 +257,12 @@ a:hover {
 
 
 /* //////////////////////Pages END//////////////////////// */
+
+
+
 footer {
   position: relative;
   text-align: center;
   background-color: #ffffff;
-  /* margin: 10px 0; */
-}
-
-footer p {
-  /* margin: 0; */
-  /* font-size: 0.8em; */
 }
 
