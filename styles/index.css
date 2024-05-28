@@ -37,6 +37,7 @@ body {
   background-color: #ebeffb;
   background: linear-gradient(180deg, #ebeffb 55%, #00000000);
   transition: background-color 0.5s ease;
+  z-index: 1000;
 }
 
 .navclass.scrolled {
@@ -136,12 +137,11 @@ a:hover {
 .resume {
   text-align: center;
 }
-
-/* Contact Section Specific Styles */
+/* ///CONTACT PAGE ///////// */
 .contact-container {
-  margin-top: 300px;
-  /* height: 80vh; */
   position: relative;
+  margin-top: 100px;
+  /* height: 80vh; */
   /* padding: 50px; */
   /* background-color: #0e0000; */
   display: flex;
@@ -200,16 +200,21 @@ a:hover {
   font-size: small;
   position: absolute;
   right: 8vw;
+  width: 25vw;
+  height: fit-content;
   max-width: 400px;
   background-color: #f8f9fe;
   padding: 40px 20px;
+  border-radius: 5px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  top: 5%;
 }
 
 .contact-container .form-div form {
   display: flex;
   /* text-align: right; */
   /* justify-content: right; */
+  padding: 20px 20px;
   flex-direction: column;
 }
 
@@ -217,8 +222,9 @@ a:hover {
 .contact-container .form-div textarea,
 .contact-container .form-div button {
   align-items: right;
-  padding: 20px 20px;
-  width: 30vw;
+  width: inherit; 
+  height: inherit;
+  padding: 10px;
   color: #000000;
   background: #f8f9fe;
   /* margin-bottom: 10px; */
@@ -265,4 +271,3 @@ footer {
   text-align: center;
   background-color: #ffffff;
 }
-
