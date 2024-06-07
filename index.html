@@ -6,8 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rahil Sardar</title>
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="styles/progress-bar.css">
     <link rel="stylesheet" href="styles/index.css">
     <script src="scripts/index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -15,16 +20,16 @@
         <ul>
             <li><a class="active" href="#home">HOME</a></li>
             <li><a href="#about">ABOUT</a></li>
-            <li><a href="#portfolio">PORTFOLIO</a></li>
             <li><a href="#resume">RESUME</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
             <li><a href="#contact">CONTACT</a></li>
         </ul>
     </nav>
 
     <section class="home paddclass marclass" id="home">
         <div class="homeText">
-            <h3>- &ThickSpace; &ThickSpace; HELLO</h3>
-            <h1>I'm <span>Rahil</span> Sardar</h1>
+            <h3 class="hello">HELLO</h3>
+            <h1>I’m <span>Rahil</span> Sardar</h1>
             <p>This is Rahil Sardar visual designer, Photographer, Web Developer and Creative Director located in India,
                 looking for working around the globe. </p>
             <a href="/assets/pdf/Rahil_Sardar_RESUME.pdf" download>
@@ -45,57 +50,91 @@
         </div>
     </section>
 
+    <section class="resume marclass paddclass" id="resume">
+        <h1>Resume</h1>
+        <div class="resume-div">
+            <div class="resume-education">
+                <h2>
+                    <img src="assets/icons/graduation-cap.svg" alt="graduation_cap">
+                    Education
+                </h2>
+                <div>
+                    <p>August 2022 - Present</p>
+                    <h3>Diploma in Computer Hardware</h3>
+                    <p>JDT Islam Polytechnic College</p>
+                </div>
+                <div>
+                    <p>April 2023 - May 2023</p>
+                    <h3>Data Analysis Intern</h3>
+                    <p>Freston Analytics</p>
+                </div>
+                <div>
+                    <p>June 2020 - March 2022</p>
+                    <h3>Higher Secondary Education</h3>
+                    <p>NGO Quarters Govt HSS</p>
+                </div>
+            </div>
+            <div class="resume-experience">
+
+                <h2>
+                    <img src="assets/icons/suitcase.svg" alt="graduation_cap">
+                    Experience
+                </h2>
+                <div>
+                    <h3>Web Developer</h3>
+                    <p>FrontEnd Developer</p>
+                    <p>Software Engineer</p>
+                </div>
+                <div>
+                    <h3>Web Developer</h3>
+                    <p>FrontEnd Developer</p>
+                    <p>Software Engineer</p>
+                </div>
+                <div>
+                    <h3>Web Developer</h3>
+                    <p>FrontEnd Developer</p>
+                    <p>Software Engineer</p>
+                </div>
+            </div>
+        </div>
+        <div class="resume-skills">
+            <h2>Skills</h2>
+            <p>HTML</p>
+            <div class="progress" style="--progress-percentage: 90%;"></div>
+            <p>CSS</p>
+            <div class="progress" style="--progress-percentage: 40%;"></div>
+            <p>JavaScript</p>
+            <div class="progress" style="--progress-percentage: 50%;"></div>
+        </div>
+    </div>
+    </section>
+
     <section class="portfolio marclass paddclass" id="portfolio">
         <h1>Portfolio</h1>
-        <div>
+        <div class="portfolio-div">
             <div class="portfolio-item">
-                <img src="images/portfolio1.jpg" alt="portfolio1">
                 <h2>Portfolio 1</h2>
                 <p>Portfolio 1 Description</p>
+                <img src="images/portfolio1.jpg" alt="portfolio1">
             </div>
             <div class="portfolio-item">
-                <img src="images/portfolio2.jpg" alt="portfolio2">
                 <h2>Portfolio 2</h2>
                 <p>Portfolio 2 Description</p>
+                <img src="images/portfolio2.jpg" alt="portfolio2">
             </div>
             <div class="portfolio-item">
-                <img src="images/portfolio3.jpg" alt="portfolio3">
                 <h2>Portfolio 3</h2>
                 <p>Portfolio 3 Description</p>
+                <img src="images/portfolio3.jpg" alt="portfolio3">
             </div>
             <div class="portfolio-item">
-                <img src="images/portfolio4.jpg" alt="portfolio4">
                 <h2>Portfolio 4</h2>
                 <p>Portfolio 4 Description</p>
+                <img src="images/portfolio4.jpg" alt="portfolio4">
             </div>
         </div>
     </section>
 
-    <section class="resume marclass paddclass" id="resume">
-        <h1>Resume</h1>
-        <div class="resume" id="resume">
-            <div class="resume-item">
-                <h2>Education</h2>
-                <p>Computer Engineering</p>
-                <p>Computer Science</p>
-                <p>Software Engineering</p>
-            </div>
-            <div class="resume-item">
-                <h2>Experience</h2>
-                <p>Web Developer</p>
-                <p>Full Stack Developer</p>
-                <p>Software Engineer</p>
-            </div>
-            <div class="resume-item">
-                <h2>Skills</h2>
-                <p>HTML</p>
-                <meter value="50" min="0" max="100">90%</meter>
-                <p>CSS</p>
-                <meter value="50" min="0" max="100">90%</meter>
-                <p>JavaScript</p>
-            </div>
-        </div>
-    </section>
 
     <section class="contact-container" id="contact">
         <div class="text-div">
@@ -115,9 +154,6 @@
                 <li><a href="https://www.facebook.com/rahil.sardar.771"><img src="assets/icons/facebook.svg"
                             alt="Facebook"></a></li>
                 <li><a href="https://www.x.com/rahil_234"><img src="assets/icons/twitter.svg" alt="Twitter"></a></li>
-                <li><a href="https://www.instagram.com/_rahi.ll/"><img src="/assets/icons/instagram.svg"
-                            alt="Instagram"></a></li>
-                <li><a href="https://wa.me/+918136980460"><img src="assets/icons/whatsapp.svg" alt="Whatsapp"></a></li>
             </ul>
         </div>
         <div class="form-div">

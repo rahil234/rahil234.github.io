@@ -8,13 +8,18 @@ var navLinks = document.querySelectorAll('.navclass li a');
 function checkSectionInView() {
   var sections = document.querySelectorAll('section');
   var scrollPosition = window.scrollY;
+  var windowBottom = scrollPosition + window.innerHeight;
 
   sections.forEach(function(section) {
     var sectionTop = section.offsetTop;
     var sectionHeight = section.offsetHeight;
+    var sectionBottom = sectionTop + sectionHeight;
 
-    if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-      // If the section is in view, add the 'active' class to the corresponding navbar link
+    if (
+      (scrollPosition >= sectionTop && scrollPosition < sectionBottom) ||
+      (windowBottom >= document.documentElement.scrollHeight && section.id === 'contact')
+    ) {
+      // If the section is in view or we're at the bottom of the page and it's the last section
       var id = section.getAttribute('id');
       navLinks.forEach(function(link) {
         if (link.getAttribute('href') === '#' + id) {
@@ -30,12 +35,6 @@ function checkSectionInView() {
 // Call the function when the page is loaded and when scrolling
 window.addEventListener('load', checkSectionInView);
 window.addEventListener('scroll', checkSectionInView);
-
-// Listen for the scroll event
-window.addEventListener('scroll', function() {
-  console.log(this.window.scrollY);
-  console.log(this.window.screen.availHeight);
-});
 
 // Listen for the click event on each link
 document.querySelectorAll('.navclass li a').forEach(function(link) {
