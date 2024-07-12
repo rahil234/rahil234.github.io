@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rahil Sardar</title>
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/progress-bar.css">
     <link rel="stylesheet" href="styles/index.css">
     <script src="scripts/index.js" defer></script>
@@ -39,7 +39,7 @@
     </section>
 
     <section class="about marclass paddclass" id="about">
-        <img src="images/about.jpg" alt="about">
+        <img src="./assets/images/IMG_9605.png" alt="about">
         <div>
             <h1>About Me</h1>
             <p>Hey I'm Rahil Sardar, a fervent explorer in the realms of computer science, software engineering, and
@@ -81,9 +81,9 @@
                     Experience
                 </h2>
                 <div>
-                    <h3>Web Developer</h3>
-                    <p>FrontEnd Developer</p>
-                    <p>Software Engineer</p>
+                    <p>April 2023 - May 2023</p>
+                    <h3>Data Analysis Intern</h3>
+                    <p>Freston Analytics</p>
                 </div>
                 <div>
                     <h3>Web Developer</h3>
@@ -106,31 +106,31 @@
             <p>JavaScript</p>
             <div class="progress" style="--progress-percentage: 50%;"></div>
         </div>
-    </div>
+        </div>
     </section>
 
     <section class="portfolio marclass paddclass" id="portfolio">
         <h1>Portfolio</h1>
         <div class="portfolio-div">
             <div class="portfolio-item">
-                <h2>Portfolio 1</h2>
-                <p>Portfolio 1 Description</p>
-                <img src="images/portfolio1.jpg" alt="portfolio1">
+                <h2>SpaceX</h2>
+                <p>This a is a cloned version of official spaceX website</p>
+                <img src="./assets/portfolio/portfolio1.jpg" alt="portfolio1">
             </div>
             <div class="portfolio-item">
-                <h2>Portfolio 2</h2>
-                <p>Portfolio 2 Description</p>
-                <img src="images/portfolio2.jpg" alt="portfolio2">
+                <h2>Logitech India</h2>
+                <p>This a is a cloned version of official spaceX website</p>
+                <img src="./assets/portfolio/portfolio2.jpg" alt="portfolio2">
             </div>
             <div class="portfolio-item">
-                <h2>Portfolio 3</h2>
-                <p>Portfolio 3 Description</p>
-                <img src="images/portfolio3.jpg" alt="portfolio3">
+                <h2>SpaceX</h2>
+                <p>This a is a cloned version of official spaceX website</p>
+                <img src="./assets/portfolio/portfolio1.jpg" alt="portfolio3">
             </div>
             <div class="portfolio-item">
-                <h2>Portfolio 4</h2>
-                <p>Portfolio 4 Description</p>
-                <img src="images/portfolio4.jpg" alt="portfolio4">
+                <h2>Logitech India</h2>
+                <p>This a is a cloned version of official Logitech India website</p>
+                <img src="./assets/portfolio/portfolio2.jpg" alt="portfolio4">
             </div>
         </div>
     </section>
@@ -157,20 +157,17 @@
             </ul>
         </div>
         <div class="form-div">
-            <form>
-                <input type="text" id="nametextbox" name="name" placeholder="Your Name" autocomplete="name"><br>
-                <input type="email" name="email" placeholder="Mail Address" autocomplete="email"><br>
-                <input type="text" name="budget" placeholder="Your Budget (Optional)"><br>
-                <textarea name="message" placeholder="Project Description"></textarea><br>
-                <button type="submit">Hire Me</button>
+            <form id="contactForm">
+                <input type="text" id="formname" name="name" placeholder="Your Name" autocomplete="name" required><br>
+                <input type="email" id="formmail" name="email" placeholder="Mail Address" autocomplete="email" required><br>
+                <input type="text" id="formbudget" name="budget" placeholder="Your Budget (Optional)"><br>
+                <textarea name="message" id="formmessage" placeholder="Project Description" required></textarea><br>
+                <button type="submit">Contact Me</button>
             </form>
         </div>
     </section>
 
-
-
-
-    <footer>
+    <footer class="footer">
         <p>Copyright &copy; 2024 rahil234.github.io. All rights reserved.</p>
     </footer>
 </body>

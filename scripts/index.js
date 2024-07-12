@@ -58,3 +58,18 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+  console.log("loaded succesfully");
+  
+  const name = document.getElementById('formname').value;
+  const email = document.getElementById('formmail').value;
+  const budget = document.getElementById('formbudget').value;
+  const message = document.getElementById('formmessage').value;
+
+  // Encode URI components to ensure special characters are handled correctly
+  const mailtoLink = `mailto:rahilsardarwork@gmail.com?subject=${encodeURIComponent('Contact from ' + name)}&body=${encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\nMessage: ' + message)}`;
+  
+  window.location.href = mailtoLink;
+});
